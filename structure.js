@@ -37,6 +37,29 @@ Gender
 posts:[postid]
 onBoarding:boolean
 
+=========CONNECTION=========
+connectionId***primary key
+sender: hdgveudgfe
+receiver: 
+status: enum[open,accepted,rejected,blocked]
+
+
+
+
+connectionId***primary key
+userId***foreign key
+followersId***foreign key
+followingsId***foreign key
+
+=========FOLLOWERS=========
+connectionId***foreign key
+followersId***primary key
+followers:[userIds]
+
+
+=========FOLLOWINGS=========
+followingsId***primary key
+
 
 
 ==========POST==========
@@ -50,11 +73,21 @@ LikeCount[likeids] // while get like for post at that time we are going to find 
 Comments[commmentIds] // while get comments for post at that time we are going to find comments
 timestamps
 
-========CHATBOX============
+==========THREAD===========
+threadId***primary key
 users:[user1,user2]
-chatId:***primary key
-message[{msg:"string",sender:loginUser/user,timestamps}]
 timestamps
+
+========MESSAGE============
+threadId***foreign key
+text:{ msg:"string", sender:user/user2, timestamp }
+document:[jpg,pdf,png].length=5
+
+
+
+
+
+
 
 ========LIKE AND COMMENT======
 likeCommentId***primary key
