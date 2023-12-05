@@ -1,0 +1,19 @@
+{
+  "name": "instagram",
+  "version": "1.0.0",
+  "description": "instagram nodejs in postgresql sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhavalhmr/instagram.git"
+  },
+  "author": "dhaval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhavalhmr/instagram/issues"
+  },
+  "homepage": "https://github.com/dhavalhmr/instagram#readme"
+}
