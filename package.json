@@ -4,7 +4,8 @@
   "description": "instagram nodejs in postgresql sequelize",
   "main": "index.js",
   "scripts": {
-    "test": "console.log"
+    "test": "console.log",
+    "start": "nodemon --exec babel-node src/index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/dhavalhmr/instagram/issues"
   },
-  "homepage": "https://github.com/dhavalhmr/instagram#readme"
+  "homepage": "https://github.com/dhavalhmr/instagram#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.5"
+  }
 }

@@ -39,10 +39,12 @@ onBoarding:boolean
 
 =========CONNECTION=========
 connectionId***primary key
-sender: hdgveudgfe
+sender: 
 receiver: 
 status: enum[open,accepted,rejected,blocked]
 
+query for follower= CONNECTION.find({$and:[{receiver:loginUser.id},{status:accepted}]})
+query for following= CONNECTION.find({$and:[{sender:loginUser.id},{status:accepted}]})
 
 
 
